@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel=stylesheet href="/static/style.css">
+  <title>Scraping HN for Search Term</title>
+</head>
+<body>
+  <h1>Scraping HN for Search Term</h1>
+  <form>
+    <form action="/", method="get">
+      <input type="text" name="search" placeholder="Keyword">
+      <input type="text" name="pages" placeholder="pages">
+      <input type="submit" value="Submit">
+    </form>
+  </form>
+  <hr>
+  {content}
+</body>
+</html>
