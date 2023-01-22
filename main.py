@@ -16,6 +16,8 @@ def headlines_get(search_term="ChatGPT", pages=20):
     for headline in headlines:
       head = headline.text.strip()
       link = headline.find('a')['href']
+      if "item?id" in link:
+        link = f"{url}{link}"
       if f"{search_term}" in head:
         all_headlines.append((head, link))
   return all_headlines
