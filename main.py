@@ -30,6 +30,7 @@ def index():
     headlines = headlines_get(search_term, pages)
   else:
     headlines = headlines_get()
+    search_term = "ChatGPT"
   page = ""
   res = ""
   links = ""
@@ -42,6 +43,7 @@ def index():
     l = l.replace("{headline}", headline)
     l = l.replace("{link}", link)
     res += l
+  page = page.replace("{search_term}", search_term)
   page = page.replace("{content}", res)
   return page
 

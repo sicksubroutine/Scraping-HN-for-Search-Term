@@ -2,3 +2,16 @@ html {
   background-color: black;
   color: white;
 }
+
+.link {
+  color: red;
+  text-decoration: none;
+}
+.link:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.red {
+  color: red;
+}
